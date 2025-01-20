@@ -9,13 +9,9 @@ botaoPisca.addEventListener('click', () => {
 function setarCor() {
     let corSetada
 
-    let numeroRed
-    let numeroGreen
-    let numeroBlue
-
-    numeroRed = numeroRed(Math.random(0, 255));
-    numeroGreen = numeroRed(Math.random(0, 255));
-    numeroBlue = numeroRed(Math.random(0, 255));
+    let numeroRed = Math.random()*256;
+    let numeroGreen = Math.random()*256;
+    let numeroBlue = Math.random()*256;
 
     corSetada = 'rgb('+ numeroRed +','+ numeroGreen +','+ numeroBlue +')'
     return corSetada;
